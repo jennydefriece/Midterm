@@ -37,7 +37,8 @@ public class Employee extends Person implements java.io.Serializable{
         this.hire = hire;
     }
 
-
+//
+    public 
     /**
      * 
      * @param office
