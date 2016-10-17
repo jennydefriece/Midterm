@@ -55,13 +55,6 @@ public class Staff_Test {
 	@Test(expected = PersonException.class)
 	public void testDOBException() throws PersonException {
 
-		new Staff("Taylor", "Sara", "Coder", date(1905, 9, 29), "Renden Street", "(432)-636-6436",
-				"goode@hotmail.com", "T 8:25-10:50am", 4, 49300, date(2004, 1, 12), eTitle.MRS);
-	}
-
-	@Test(expected = PersonException.class)
-	public void testPhoneNumException() throws PersonException {
-		new Staff("Reese", "Tane", "McDoland", date(1976, 7, 25), "Rankin Street", "412-356-5389",
-				"wief@hotmail.com", "M 4:00-5:00pm", 3, 38000, date(2013, 5, 21), eTitle.MR);
+	
 	}
 }
