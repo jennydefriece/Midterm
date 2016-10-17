@@ -21,8 +21,8 @@ public class Section {
 		return CourseID;
 	}
 	
-	public void setCourseID(UUID ID_Course) {
-		this.CourseID = ID_Course;
+	public void setCourseID(UUID CourseId) {
+		this.CourseID = CourseID;
 	}
 	
 	public UUID getSemesterID() {
@@ -30,16 +30,16 @@ public class Section {
 		
 	}
 	
-	public void setSemesterID(UUID ID_Semester) {
-		SemesterID = ID_Semester;
+	public void setSemesterID(UUID SemesterID) {
+		this.SemesterID = SemesterID;
 	}
 	
 	public int getRoomID() {
 		return RoomID;
 	}
 	
-	public void setRoomID(int roomID) {
-		RoomID = roomID;
+	public void setRoomID(int RoomID) {
+		RoomID = RoomID;
 	}
 	
 	}

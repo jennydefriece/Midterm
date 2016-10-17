@@ -9,38 +9,38 @@ public class Course {
 	private int GradePoints;
 	private eMajor Major;
 	
-public Course(String CourseName, eMajor Major) {
-	this.CourseID = UUID.randomUUID();
-	this.CourseName = CourseName;
-	this.Major = Major;
+	public Course(String CourseName, eMajor Major) {
+		this.CourseID = UUID.randomUUID();
+		this.CourseName = CourseName;
+		this.Major = Major;
 }	
-public UUID getCourseID() {
-	return CourseID;
+	public UUID getCourseID() {
+		return CourseID;
 		
 }
-public String getCourseName() {
-	return CourseName;
+	public String getCourseName() {
+		return CourseName;
 	
 }
 
-public void setCourseName(String crsName) {
-	this.CourseName = crsName;
+	public void setCourseName(String CourseName) {
+		this.CourseName = CourseName;
 }
 
-public int getGradePoints() {
-	return GradePoints;
+	public int getGradePoints() {
+		return GradePoints;
 }
 
-public void setGradePoints(int GrPts) {
-	this.GradePoints = GrPts;
+	public void setGradePoints(int GradePoints) {
+		this.GradePoints = GradePoints;
 }
 
-public eMajor geteMajor(){
-	return Major;
+	public eMajor geteMajor(){
+		return Major;
 }
 
-public void seteMajor(eMajor Major){
-	this.Major = Major;
+	public void seteMajor(eMajor Major){
+		this.Major = Major;
 
 }
 
