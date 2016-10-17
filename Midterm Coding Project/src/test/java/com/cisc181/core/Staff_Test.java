@@ -22,7 +22,7 @@ public class Staff_Test {
 	}
 
 	@BeforeClass
-	public static void setup() throws ParseException {
+	public static void setup() throws ParseException, PersonException {
 
 
 		staff.add(new Staff("Jenny", "Joan", "Peters", date(1989, 4, 6), "Country Street", "(145)-584-9283",
@@ -42,7 +42,7 @@ public class Staff_Test {
 	}
 
 	@Test
-	public void testStaffSalary() throws ParseException {
+	public void testSalary() throws ParseException {
 		double sum_Salary = 0;
 		int count=0;
 		for (Staff staff1 : staff) {
@@ -53,8 +53,34 @@ public class Staff_Test {
 	}
 
 	@Test(expected = PersonException.class)
-	public void testDOBException() throws PersonException {
+	public void InvalidDOBException() throws PersonException {
+		new Staff("Harper", "Kristy", "Smith", date(1992, 4, 20), "Levell Street", "(332)-206-3827",
+				"Harper@yahoo.com", "8-10 TR", 3, 87333, date(2014, 2, 8), eTitle.MRS);
+	}
 
+	@Test(expected = PersonException.class)
+	public void testPhoneNumException() throws PersonException {
+		new Staff("Tony", "Matt", "Fisher", date(1980, 4, 17), "Willus Street", "393-116-2392",
+				"Tony@amazon.com", "11-12 F", 2, 44000, date(2014, 4, 4), eTitle.MR);
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 	
 	}
 }

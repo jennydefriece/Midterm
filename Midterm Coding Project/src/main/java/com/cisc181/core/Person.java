@@ -70,12 +70,14 @@ public abstract class Person implements java.io.Serializable {
 
 	public void setPhone(String newPhone_number) throws PersonException {
 		String regex = "^\\(([0-9]{3})\\)[-]([0-9]{3})[-]([0-9]{4})$";
-		if (){
-			phone_number = newPhone_number;	
+		boolean test = Pattern.matches(regex, newPhone_number);
+		if (test){
+			this.phone_number = newPhone_number;	
 		}
 		
 		else {
 			throw new PersonException(this);
+		}
 	}
 
 	public String getPhone() {
@@ -102,7 +104,7 @@ public abstract class Person implements java.io.Serializable {
 	 */
 
 	public Person(String FirstName, String MiddleName, String LastName,
-			Date DOB, String Address, String Phone_number, String Email)
+			Date DOB, String Address, String Phone_number, String Email) throws PersonException
 	{
 		this.FirstName = FirstName;
 		this.MiddleName = MiddleName;
