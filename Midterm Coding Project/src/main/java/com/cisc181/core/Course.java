@@ -18,10 +18,30 @@ public UUID getCourseID() {
 	return CourseID;
 		
 }
+public String getCourseName() {
+	return CourseName;
+	
+}
 
+public void setCourseName(String crsName) {
+	this.CourseName = crsName;
+}
 
+public int getGradePoints() {
+	return GradePoints;
+}
 
+public void setGradePoints(int GrPts) {
+	this.GradePoints = GrPts;
+}
 
+public eMajor geteMajor(){
+	return Major;
+}
 
+public void seteMajor(eMajor Major){
+	this.Major = Major;
+
+}
 
 }

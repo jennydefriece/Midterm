@@ -46,7 +46,8 @@ public abstract class Person implements java.io.Serializable {
 		return DOB;
 	}
 
-	public void setDOB(Date DOB){
+	public void setDOB(Date DOB) throws PersonException{
+		Calendar day = Calendar.getInstance();
 		this.DOB = DOB;
 		
 		
